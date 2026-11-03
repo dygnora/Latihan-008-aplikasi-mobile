@@ -12,7 +12,14 @@ class MyListView extends StatelessWidget {
       theme: ThemeData(colorSchemeSeed: Colors.amber),
       home: Scaffold(
         appBar: AppBar(title: const Text('Contoh Listview'),),
-        body: InfoRow(ikon: Icons.email_rounded, label: 'email', value: 'fufufafa@example.com')
+        body: Column(
+          children: [
+            InfoRow(ikon: Icons.email_rounded, label: 'email', value: 'fufufafa@example.com'),
+            InfoRow(ikon: Icons.facebook, label: 'facebook', value: 'fufufafa'),
+            InfoRow(ikon: Icons.phone_android, label: 'telepon', value: '0812909090'),
+            InfoRow(ikon: Icons.web_asset, label: 'web', value: 'www.fufufafa.com')
+          ],
+        )
         ),
     );
   }
